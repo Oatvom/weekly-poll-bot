@@ -1,14 +1,10 @@
 name: Weekly Poll
 
 
-
 on:
-  workflow_dispatch:  # 👈 this enables the manual "Run workflow" button
-
-#on:
- # schedule:
+ schedule:
     # Runs every Tuesday at 12:00 UTC
-  #  - cron: '0 12 * * 2'
+   - cron: '0 12 * * 2'
 
 jobs:
   send-poll:
