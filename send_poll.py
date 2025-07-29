@@ -48,7 +48,7 @@ async def on_ready():
     for (emoji, day_name, _), date in zip(DAYS, upcoming_dates):
         lines.append(f"{emoji} - {day_name} ({date.strftime('%m/%d')})")
 
-    description = f"**What days are you available to run content** (Week of {week_of}):\n" + "\n".join(lines)
+    description = f"**@Everyone What days are you available to run content** (Week of {week_of}):\n" + "\n".join(lines)
 
     msg = await channel.send(description)
 
